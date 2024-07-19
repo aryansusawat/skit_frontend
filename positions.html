@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+   body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0px;
+   }
+   .outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:800px;
+    height:700px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid grey;
+
+
+   }
+   .inner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width:500px;
+    height:500px;
+    border-radius: 10%;
+    position: relative;
+    
+
+   }
+   /* .img1{
+    margin-left: 146px;
+    margin-top: 0px;
+    
+   } */
+   img{
+    display: flex;
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    top: 100px;
+    
+    z-index:1;
+    
+    position:absolute;
+    
+   }
+   .info{
+    top:40%;
+    width:500px;
+    height:270px;
+    background-color: white;;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+   }
+   .text{
+    text-align: center;;
+
+   }
+   .inner2{
+    margin-top:50px;
+    size:50%;}
+   .icon{
+    height:100px;
+    font-size: x-large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="inner">
+            
+                <img src="one-piece.avif" alt="" >
+            
+            <div class="info">
+               <div class="inner2"> <p class="text">Frontend Developer</p><br>
+                <p class="text">Monkey De Luffy</p><br>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-twitter" style="height:20px;"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i>
+            </div>
+            <button>activate gear 5</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
