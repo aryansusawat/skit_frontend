@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+
+    .container{
+        width: 50%;
+        margin: auto;
+        box-shadow: 6px 6px 6px 6px seashell;
+        border:2px solid black;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <input type="text" name="" id="">
+    <button>submot</button>
+</div>
+    <script>
+      
+          
+    
+        setInterval(()=>{
+           
+            let color=`${Math.floor(Math.random() * 1000)},${Math.floor(Math.random() * 1000)},${Math.floor(Math.random() * 1000)}`;
+            
+    
+            document.querySelector("input").value=color;
+            document.body.style.backgroundColor=`rgb(${color})`
+        },1000)
+   document.querySelector("button").onclick=function(){
+    let val= document.querySelector("input").value;
+let h=document.createElement("h1");
+h.innerHTML=val;
+h.className="box"
+document.querySelector(".container").append(h) ;  };
+
+document.querySelector("input").oninput= function(event){
+    event.target.style.backgroundColor="yellow"
+}    </script>
+</body>
+</html>
